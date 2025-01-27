@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8a8888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background: #161010;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(173, 159, 159, 0.2);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display {
+    width: 100%;
+    height: 50px;
+    color: #080303;
+    border: 1px solid #d03232;
+    border-radius: 5px;
+    text-align: right;
+    /* Yazı sağda kalır */
+    padding: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    /* Kutuyu yatayda ortalar */
+    align-items: center;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.buttons button {
+    height: 50px;
+    font-size: 1.2rem;
+    background-color: #f74a05;
+    color: rgb(8, 6, 6);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    min-width: 60px;
+}
+
+.buttons button:hover {
+    background-color: #d6160c;
+}
+
+.buttons .operator {
+    background-color: #a38f8e;
+}
+
+.buttons .operator:hover {
+    background-color: #859589;
+}
+
+.buttons .clear {
+    background-color: #b79a9d;
+}
+
+.buttons .clear:hover {
+    background-color: #a71d2a;
+}
